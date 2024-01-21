@@ -20,7 +20,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start': '#FF8938',
+              'gradient-end':'#F00'
           }
         }
       }
@@ -33,19 +34,21 @@
 </style>
 </head>
 <body>
-   <header>
-    <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+   <header class="container mx-auto">
+    <div class="lg:my-32">
+        <div class="flex justify-between items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-3xl lg:text-7xl font-extrabold">
                 It's good <br>
                tea time at The <br>
                 Tea House</h1>
             <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-            <button class="btn btn-primary">Explore More</button>
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
           </div>
          <div>
-            <img src="images/banner.png" class="max-w-sm" />
+            <img src="images/banner.png" class="" />
             <div class="flex items-center  space-x-3 bg-white drop-shadow-lg w-56 p-4 -mt-20">
                 <i class="fa-solid fa-star text-3xl text-amber-400"></i>
                 <div>
@@ -131,7 +134,7 @@
 
    </section>
    <!-- Super Client Section -->
-   <section class="my-24 flex flex-col gap-12 lg:flex-row rounded-xl  bg-gradient-to-r from-[#FF8938] to-[#F00] px-4  lg:px-16 py-24">
+   <section class="my-24 flex flex-col gap-12 lg:flex-row rounded-xl  bg-gradient-to-r from-gradient-start to-gradient-end px-4  lg:px-16 py-24">
     <div class="flex items-center lg:pr-28 ">
         <div class="space-y-4">
           <h2 class="text-2xl lg:text-5xl font-extrabold text-white">
@@ -219,8 +222,56 @@
    </section>
 
    </main>
-   <footer>
-
-   </footer>
+   <footer class="p-5 lg:p-28 bg-base-200 text-base-content">
+    <div class="flex flex-col lg:flex-row justify-between lg:px-16">
+      <img class="w-16 h-16" src="images/cup.png" alt="">
+      <div class="flex items-center gap-4">
+        <p>Ready to get strated?</p>
+      <button class="bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+      </div>
+    </div>
+    <div  class="footer lg:p-10 bg-base-200 text-base-content">
+      <nav>
+        <header class="footer-title">Quick Links</header> 
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Insurance</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Our Service</header> 
+        <a class="link link-hover">Life Insurance</a>
+        <a class="link link-hover">Car Insurance</a>
+        <a class="link link-hover">Health Insurance</a>
+        <a class="link link-hover">House Insurance</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Help</header> 
+        <a class="link link-hover">FAQs</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <form>
+        <header class="footer-title text-[#1C1C1C]">Subscribe to our <br> newsletter</header> 
+        <fieldset class="">
+          <div class="border-b-2">
+            <input class="bg-transparent" type="email" placeholder="Email Address"/> 
+            <button class="bg-gradient-to-r from-gradient-start to-gradient-end rounded-full"><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </fieldset>
+        <div class="mx-auto">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </form>
+    </div>
+    <div>
+      <footer class="footer footer-center p-4 bg-base-200 text-base-content">
+        <aside>
+          <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+      </footer>
+    </div>
+  </footer>
 </body>
 </html>
